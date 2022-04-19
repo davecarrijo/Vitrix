@@ -8,7 +8,7 @@ class FloorCube(ursina.Entity):
             position=position,
             scale=2,
             model="cube",
-            texture=os.path.join("assets", "floor.png"),
+            texture=os.path.join("assets", "floor_2.png"),
             collider="box"
         )
 
@@ -28,7 +28,7 @@ class Floor:
                     cube.color = ursina.color.color(0, 0.2, 0.8)
                 else:
                     cube.color = ursina.color.color(0, 0.2, 1)
-                
+
                 dark2 = not dark2
-            
+
             dark1 = not dark1

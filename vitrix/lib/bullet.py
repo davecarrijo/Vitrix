@@ -9,7 +9,7 @@ class Bullet(ursina.Entity):
     def __init__(self, position: ursina.Vec3, direction: float, x_direction: float, network=False, damage: int = 10, slave=False):
         if network == False:
             self.singleplayer = True
-        
+
         speed = 35
         dir_rad = ursina.math.radians(direction)
         x_dir_rad = ursina.math.radians(x_direction)
@@ -25,7 +25,7 @@ class Bullet(ursina.Entity):
         super().__init__(
             position=position + self.velocity / speed,
             model="cube",
-            texture=os.path.join("assets", "bullet.png"),
+            texture=os.path.join("assets", "bullet_2.png"),
             collider="box",
             scale=0.2
         )

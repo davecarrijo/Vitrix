@@ -8,10 +8,10 @@ class Wall(ursina.Entity):
             position=position,
             scale=2,
             model="cube",
-            texture=os.path.join("assets", "wall.png"),
+            texture=os.path.join("assets", "wall_2.png"),
             origin_y=-0.5
         )
-        
+
         self.texture.filtering = None
         self.collider = ursina.BoxCollider(self, size=ursina.Vec3(1, 2, 1))
 
